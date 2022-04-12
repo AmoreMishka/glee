@@ -1,11 +1,11 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'global';
+@import './global/vars';
+@import './global/fonts';
+@import './global/reset';
+@import './global/global';
+@import './global/icons';
 
-
-
-
-
-
-@import 'media';
+// BLOCKS
+@import './blocks/header.scss';
+// COMPONENTS
+@import './components/menu.scss';
+@import './components/user-nav.scss';
