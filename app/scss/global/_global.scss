@@ -1,0 +1,12 @@
+.container{
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  &--box{
+    max-width: 1200px;
+  }
+}
+
+.hidden{
+  display: none;
+}
