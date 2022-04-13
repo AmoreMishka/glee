@@ -5,4 +5,12 @@
     align-items: center;
     padding-right: 25px;
   }
+  &__link{
+    @extend %Rubik-Medium-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #436372;
+  }
 }
+
+
