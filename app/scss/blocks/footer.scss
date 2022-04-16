@@ -1,0 +1,104 @@
+.footer {
+  @extend %Rubik-Regular-400;
+  font-size: 14px;
+  line-height: 32px;
+
+  & a {
+    color: #7b7b7b;
+  }
+}
+
+.footer-top {
+  padding: 70px 0;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  justify-content: space-between;
+
+  &__contact {
+    width: 194px;
+    margin-right: 100px;
+
+    & a {
+      display: block;
+    }
+  }
+
+  &__nav {
+    width: 140px;
+    margin-right: 140px;
+  }
+
+  &__account {
+    width: 110px;
+    margin-right: 180px;
+  }
+
+  &__adress {
+    margin-top: 20px;
+  }
+
+  &__title {
+    @extend %DMSans-Bold-700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #1f2044;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    width: 240px;
+    color: #7b7b7b;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__form-input {
+    background-color: #fef7f0;
+    border: none;
+    width: 170px;
+
+    &::placeholder {
+      color: #234969;
+    }
+  }
+
+  &__form-btn {
+    background-color: #a3bbc8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+}
+
+.footer-bottom {
+  padding: 20px 0 40px;
+  color: #b6b6b6;
+  line-height: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  &__nav-link {
+    color: #b6b6b6;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-item {
+    &:not(:first-child) {
+      border-left: 1px solid #b6b6b6;
+      padding: 0 13px;
+    }
+
+    &:first-child {
+      padding: 0 13px;
+    }
+  }
+}
