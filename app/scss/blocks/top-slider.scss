@@ -1,0 +1,25 @@
+.top-slider{
+  background-color: #fcd7b6;
+  color: #436372;
+  &__title{
+    font-size: 72px;
+    line-height: 70px;
+    @extend %Rubik-Medium-500;
+    margin-bottom: 40px;
+  }
+  &__text{
+    max-width: 347px;
+    font-size: 16px;
+    line-height: 30px;
+    @extend %Rubik-Regular-400;
+    margin-bottom: 40px;
+  }
+  &__link{
+    font-size: 15px;
+    line-height: 12px;
+    color:#fff;
+    @extend %Rubik-Medium-500;
+    background-color: #a3bbc8;
+  }
+}
+

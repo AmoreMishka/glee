@@ -1,12 +1,14 @@
 @import './global/vars';
 @import './global/fonts';
 @import './global/reset';
+@import './global/libs';
 @import './global/global';
 @import './global/icons';
 
 // BLOCKS
 @import './blocks/header.scss';
 @import './blocks/footer.scss';
+@import './blocks/top-slider.scss';
 // COMPONENTS
 @import './components/menu.scss';
 @import './components/user-nav.scss';
