@@ -67,7 +67,7 @@
   }
 
   &__form-btn {
-    background-color: #a3bbc8;
+    background-color: $btn;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -77,13 +77,13 @@
 
 .footer-bottom {
   padding: 20px 0 40px;
-  color: #b6b6b6;
+  color: $footer;
   line-height: 16px;
   display: flex;
   justify-content: space-between;
 
   &__nav-link {
-    color: #b6b6b6;
+    color: $footer;
   }
 
   &__nav {
@@ -93,7 +93,7 @@
 
   &__nav-item {
     &:not(:first-child) {
-      border-left: 1px solid #b6b6b6;
+      border-left: 1px solid $footer;
       padding: 0 13px;
     }
 

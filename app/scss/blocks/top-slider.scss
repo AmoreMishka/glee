@@ -1,25 +1,80 @@
-.top-slider{
-  background-color: #fcd7b6;
+.top-slider {
   color: #436372;
-  &__title{
+
+  &__container {
+    background-color: $bg;
+    background-image: url('../images/slider/circle.png');
+    background-repeat: no-repeat;
+    background-size: 36%;
+    background-position-x: 80%;
+    background-position-y: center;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 200px;
+  }
+
+  &__title {
+    max-width: 411px;
+    color: $title;
     font-size: 72px;
     line-height: 70px;
     @extend %Rubik-Medium-500;
     margin-bottom: 40px;
+
   }
-  &__text{
+
+  &__text {
     max-width: 347px;
     font-size: 16px;
     line-height: 30px;
     @extend %Rubik-Regular-400;
     margin-bottom: 40px;
   }
-  &__link{
+
+  &__link {
     font-size: 15px;
     line-height: 12px;
-    color:#fff;
+    color: #fff;
     @extend %Rubik-Medium-500;
-    background-color: #a3bbc8;
+    background-color: $btn;
+    padding: 22px 10px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 180px;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+  li {
+    button {
+      background-color: #fde3cc;
+      border-radius: 50%;
+      border: none;
+      width: 30px;
+      height: 29px;
+      color: #708088;
+      font-size: 15px;
+      line-height: 12px;
+      @extend %Rubik-Medium-500;
+      margin-right: 10px;
+      margin-bottom: 55px;
+    }
+
+    &.slick-active {
+      button {
+        background-color: #fff;
+        color: #243f4d;
+      }
+    }
   }
 }
 
