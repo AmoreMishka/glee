@@ -1,0 +1,29 @@
+.info{
+  background-color: #fef7f0;
+  display: flex;
+  justify-content: space-between;
+  &__item{
+    max-width: 600px;
+    width: 100%;
+    padding: 45px 0;
+    display: flex;
+    justify-content: center;
+    &:not(:last-child){
+      border-right: 1px solid #e8e4df;
+    }
+    &-inner{
+      padding-left: 25px;
+    }
+    &-title{
+      font-size: 18px;
+      line-height: 40px;
+      @extend %DMSans-Bold-700;
+    }
+    &-text{
+      color: #585858;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+}
