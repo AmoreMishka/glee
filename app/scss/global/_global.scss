@@ -23,3 +23,10 @@ body{
 .hidden{
   display: none;
 }
+.title{
+  font-size: 36px;
+  @extend %DMSans-Bold-700;
+  color: #191919;
+  text-align: center;
+  margin-bottom: 35px;
+}
