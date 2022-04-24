@@ -6,4 +6,5 @@ $(function(){
 
 
   var mixer = mixitup('.products__grid');
+  var mixer = mixitup('.design__grid');
 });

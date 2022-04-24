@@ -1,0 +1,63 @@
+.design{
+  margin: 100px 0;
+  &__button{
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__button-btn{
+      border: none;
+      background-color: #fff;
+      font-size: 16px;
+      @extend %DMSans-Bold-700;
+      color: #8b8b8b;
+      &:not(:last-child) {
+        padding-right: 30px;
+      }
+  }
+  .mixitup-control-active {
+    color: #1a1a1a;
+  }
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px 30px;
+  }
+  &__card{
+    background-image: url(../images/design/1.png);
+    max-width: 370px;
+    height: 245px;
+    width: 100%;
+    padding-left: 38px;
+    background-repeat: no-repeat;
+    &-title{
+      font-size: 20px;
+      line-height: 1;
+      @extend %DMSans-Bold-700;
+      color: #191919;
+      max-width: 200px;
+      padding: 40px 0 20px;
+    }
+    &-text{
+      font-size: 16px;
+      @extend %DMSans-Bold-700;
+      color: $btn;
+    }
+  }
+    &__card-second{
+      background-image: url(../images/design/2.png);
+    }
+    &__card-third{
+      background-image: url(../images/design/3.png);
+    }
+    &__card-fourth{
+      background-image: url(../images/design/4.png);
+    }
+    &__card-fifth{
+      background-image: url(../images/design/5.png);
+    }
+    &__card-sixth{
+      background-image: url(../images/design/6.png);
+    }
+
+
+}
