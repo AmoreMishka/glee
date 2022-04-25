@@ -1,0 +1,74 @@
+.blog{
+  padding-top: 120px;
+  background-color: #fef7f0;
+  background-size: contain;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__inner-title{
+    margin-bottom: 55px;
+  }
+  &__inner-link{
+    padding-right: 25px;
+    position: relative;
+    color: #262626;
+    font-size: 16px;
+    @extend %DMSans-Bold-700;
+    &::after{
+      position: absolute;
+      content: "";
+      background-image: url(../images/icons/arrow-blog.svg);
+      width: 6px;
+      height: 11px;
+      top: 5px;
+      right: -3px;
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 370px;
+
+    &-link{
+      position: relative;
+    }
+    &-img{
+      height: 250px;
+      object-fit: cover;
+    }
+    &-imgtext{
+      border-radius: 25px;
+      font-size: 14px;
+      line-height: 20px;
+      @extend %Poppins-Bold-700;
+      color: #ffffff;
+      background-color: $btn;
+      padding: 10px 30px;
+      position: absolute;
+      margin-left: 30px;
+      bottom: -265px;
+    }
+    &-text{
+      padding: 35px 0 18px 35px;
+      color: #262626;
+      font-size: 18px;
+      @extend %DMSans-Medium-500;
+      max-width: 315px;
+    }
+    &-info{
+      display: flex;
+      color: #222933;
+      font-size: 12px;
+      line-height: 30px;
+      @extend %Rubik-Regular-400;
+      padding-left: 35px;
+    }
+    &-date{
+        padding-right: 30px;
+    }
+  }
+}
