@@ -1,0 +1,43 @@
+.top {
+  background-color: #edf1f4;
+  height: 125px;
+
+  &__title {
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    @extend %Rubik-Light-300;
+    text-align: center;
+    padding: 35px 0 10px;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    font-size: 14px;
+    line-height: 24px;
+    @extend %Rubik-Regular-400;
+    color: #888c91;
+    position: relative;
+    &:not(:last-child) {
+      padding-right: 22px;
+    }
+    &:not(:last-child)::after {
+      content: "/";
+      position: absolute;
+      color: #a6aaaf;
+      right: 8px;
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+}
