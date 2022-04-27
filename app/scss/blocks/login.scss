@@ -1,0 +1,65 @@
+.login {
+  padding-top: 120px;
+
+  &__inner {
+    display: flex;
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__form {
+    width: 100%;
+  }
+
+  &__label {
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  &__name {
+    color: #436372;
+    @extend %Rubik-Regular-400;
+    font-size: 14px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 1px solid #f6f6f6;
+    margin-top: 15px;
+    height: 60px;
+  }
+
+  &__btn {
+    border: none;
+    background-color: $btn;
+    width: 100%;
+    color: #ffffff;
+    padding: 20px 0;
+    cursor: pointer;
+    margin-bottom: 35px;
+  }
+
+  &__check {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+    border-bottom: 2px solid #f6f6f6;
+  }
+
+  &__error {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__registration{
+    display: block;
+    border: 2px solid $btn;
+    width: 100%;
+    color: $title;
+    text-align: center;
+    padding: 21px 0;
+    margin-bottom: 120px;
+  }
+}
