@@ -1,0 +1,55 @@
+.catalog{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+  }
+  &__filters{
+    width: 270px;
+    margin-right: 25px;
+  }
+}
+
+.filters__category{
+  margin-bottom: 70px;
+  &-title{
+    color: $title;
+    font-size: 18px;
+    text-transform: uppercase;
+    @extend %DMSans-Bold-700;
+    margin-bottom: 30px;
+    position: relative;
+    &::after{
+      content: '';
+      border-bottom: 1px solid $btn;
+      position: absolute;
+      width: 38px;
+      top: 50%;
+      left: 112px;
+    }
+  }
+  &-item{
+    padding: 0 23px 0 15px;
+    &:hover{
+      background-color: #edf1f4;
+      border-radius: 5px;
+    }
+  }
+  &-link{
+    color: $title;
+    font-size: 16px;
+    line-height: 43px;
+    @extend %Rubik-Regular-400;
+    position: relative;
+      &::after{
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 10px;
+      background-image: url(../images/icons/arrow-right.svg);
+      background-repeat: no-repeat;
+      top: 5px;
+      left: 227px;
+    }
+  }
+  }
+

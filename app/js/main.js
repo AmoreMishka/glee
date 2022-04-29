@@ -1,4 +1,11 @@
 $(function(){
+
+$('.filters__price-input').ionRangeSlider({
+  type: "double",
+})
+
+
+
   $('.top-slider__inner').slick({
      arrows: false,
      dots: true,
