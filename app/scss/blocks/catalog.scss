@@ -8,25 +8,10 @@
     margin-right: 25px;
   }
 }
-
+.filters__item{
+  margin-bottom: 75px;
+}
 .filters__category{
-  margin-bottom: 70px;
-  &-title{
-    color: $title;
-    font-size: 18px;
-    text-transform: uppercase;
-    @extend %DMSans-Bold-700;
-    margin-bottom: 30px;
-    position: relative;
-    &::after{
-      content: '';
-      border-bottom: 1px solid $btn;
-      position: absolute;
-      width: 38px;
-      top: 50%;
-      left: 112px;
-    }
-  }
   &-item{
     padding: 0 23px 0 15px;
     &:hover{
@@ -51,5 +36,98 @@
       left: 227px;
     }
   }
+}
+.filters__title-price{
+  &::after{
+    left: 65px;
   }
+}
+.filters__title-brand{
+  &::after{
+    left: 75px;
+  }
+}
+.filters__price-scale{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  color: #334c59;
+  @extend %Rubik-Regular-400;
+  font-size: 14px;
+}
 
+.irs--flat .irs-handle {
+  top: 22px;
+  width: 15px;
+  height: 15px;
+  background-color: $btn;
+}
+.irs--flat .irs-handle>i:first-child{
+display: none;
+}
+.irs--flat .irs-bar{
+  background-color: $btn;
+  height: 2px;
+  top: 30px;
+}
+
+.irs--flat .irs-line {
+  top: 30px;
+  height: 1px;
+  background-color: #c2d2db;
+  border-radius: 4px;
+}
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single{
+  display: none;
+}
+.irs--flat .irs-min,
+.irs--flat .irs-max{
+  display: none;
+}
+
+.filters__brand{
+  &-button{
+display: block;
+  }
+  &-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 15px 25px 15px 15px;
+    color: $title;
+    font-size: 16px;
+    @extend %Rubik-Regular-400;
+    &:hover{
+      background-color: #edf1f4;
+      border-radius: 5px;
+    }
+  }
+}
+
+.recent{
+  &__title{
+    &::after{
+      left: 185px;
+    }
+  }
+  &__item{
+  display: flex;
+  margin-bottom: 25px;
+}
+&__img{
+  border: 1px solid #f2f2f2;
+  width: 70px;
+  height: 70px;
+  object-fit: none;
+  margin-right: 20px;
+}
+&__descr{
+  font-size: 15px;
+  color: #333333;
+  @extend %Rubik-Regular-400;
+}
+}

@@ -32,3 +32,19 @@ body{
   margin-bottom: 35px;
 }
 
+.filters__title{
+    color: $title;
+    font-size: 18px;
+    text-transform: uppercase;
+    @extend %DMSans-Bold-700;
+    margin-bottom: 30px;
+    position: relative;
+    &::after{
+      content: '';
+      border-bottom: 1px solid $btn;
+      position: absolute;
+      width: 38px;
+      top: 50%;
+      left: 112px;
+    }
+}

@@ -101,7 +101,7 @@
 
                     <div class="catalog__filters filters">
                         <div class="filters__category filters__item">
-                            <h3 class="filters__category-title">CATEGORY</h3>
+                            <h3 class="filters__title">CATEGORY</h3>
                             <ul class="filters__category-list">
                                 <li class="filters__category-item">
                                     <a class="filters__category-link" href="#">
@@ -131,15 +131,75 @@
                             </ul>
                         </div>
                         <div class="filters__price filters__item">
-                            <h3 class="filters__price-title">PRICE</h3>
+                            <h3 class="filters__title filters__title-price">PRICE</h3>
                             <form class="filters__price-form" action="#">
-                                <input class="filters__price-input" type="text"
+                                <input class="filters__price-input" type="range"
                                 data-min="0"
                                 data-max="1000"
-                                data-from="200"
+                                data-from="100"
                                 data-to="500"
                                 >
                             </form>
+                            <div class="filters__price-scale">
+                                <span class="filters__price-from"></span>
+                                <span class="filters__price-to"></span>
+                            </div>
+                        </div>
+                        <div class="filters__brand filters__item">
+                            <h3 class="filters__title filters__title-brand">BRAND</h3>
+                            <div class="filters__brand-button">
+                            <button class="filters__brand-btn">
+                                <span class="filters__brand-text">RFL</span>
+                                <span class="filters__brand-num">(10)</span>
+                            </button>
+                            <button class="filters__brand-btn">
+                                <span class="filters__brand-text">Brothers</span>
+                                <span class="filters__brand-num">(21)</span>
+                            </button>
+                            <button class="filters__brand-btn">
+                                <span class="filters__brand-text">Regal</span>
+                                <span class="filters__brand-num">(3)</span>
+                            </button>
+                            <button class="filters__brand-btn">
+                                <span class="filters__brand-text">Nadia</span>
+                                <span class="filters__brand-num">(14)</span>
+                            </button>
+                            <button class="filters__brand-btn">
+                                <span class="filters__brand-text">Otobi</span>
+                                <span class="filters__brand-num">(6)</span>
+                            </button>
+                        </div>
+                        </div>
+                        <div class="recent filters__item">
+                            <h3 class="filters__title recent__title">
+                                RECENT PRODUCTS
+                            </h3>
+                            <div class="recent__items">
+                            <div class="recent__item">
+                                <img class="recent__img" src="images/catalog/1.png" alt="recent products">
+                                <div class="recent__descr">
+                                    <span class="recent__descr-title">Pendant lamp</span>
+                                    <span class="star"></span>
+                                    <span class="recent__descr-price">23$</span>
+                                </div>
+                            </div>
+                            <div class="recent__item">
+                                <img class="recent__img" src="images/catalog/2.png" alt="recent products">
+                                <div class="recent__descr">
+                                    <span class="recent__descr-title">Pendant lamp</span>
+                                    <span class="star"></span>
+                                    <span class="recent__descr-price">23$</span>
+                                </div>
+                            </div>
+                            <div class="recent__item">
+                                <img class="recent__img" src="images/catalog/3.png" alt="recent products">
+                                <div class="recent__descr">
+                                    <span class="recent__descr-title">Pendant lamp</span>
+                                    <span class="star"></span>
+                                    <span class="recent__descr-price">23$</span>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
 
