@@ -48,3 +48,41 @@ body{
       left: 112px;
     }
 }
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+
+  .pagination__list{
+  display: flex;
+  .pagination__item{
+    margin-right: 15px;
+  }
+  .pagination__link{
+    @extend %Rubik-Regular-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $title;
+    border: 1px solid $btn;
+    padding: 20px;
+    &:hover{
+      background-color: $btn;
+      color: #ffffff;
+    }
+  }
+  }
+  &__next{
+    text-transform: uppercase;
+    @extend %Rubik-Regular-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $title;
+    border: 1px solid $btn;
+    padding: 14px;
+    &:hover{
+      background-color: $btn;
+      color: #ffffff;
+    }
+  }
+}
