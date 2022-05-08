@@ -176,8 +176,40 @@
   }
 }
 .product-related{
-  padding-top: 130px;
-  &__slider{
-
+  padding-top: 10px;
+&__slider{
+  .product-card{
+    box-shadow: none;
   }
+}
+&__title{
+  color: $title;
+  text-align: start;
+  margin-bottom: 75px;
+}
+.slick-arrow{
+  position: absolute;
+  top: -108px;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #edf1f4;
+  background-color: #fff;
+  border-radius: 10px;
+  &:hover{
+    border-color: $btn;
+  }
+}
+.slick-prev{
+right: 70px;
+background-image: url(../images/icons/left-arrow.svg);
+background-repeat: no-repeat;
+background-position: center;
+}
+.slick-next{
+  right: 0;
+  background-image: url(../images/icons/right-arrow.svg);
+background-repeat: no-repeat;
+background-position: center;
+}
 }
