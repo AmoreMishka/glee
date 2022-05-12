@@ -1,0 +1,154 @@
+.news {
+  padding-top: 120px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    width: 835px;
+    margin-right: 70px;
+  }
+
+  &__img-inner {
+    position: relative;
+  }
+
+  &__img {
+    width: 830px;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+
+  &__img-text {
+    width: 275px;
+    height: 70px;
+    background-color: $btn;
+    color: #fff;
+    font-size: 12px;
+    line-height: 30px;
+    @extend %Rubik-Regular-400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__title {
+    font-size: 36px;
+    color: #333;
+    @extend %Rubik-Regular-400;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    color: $title;
+    font-size: 16px;
+    line-height: 30px;
+    @extend %Rubik-Regular-400;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    color: $btn;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %Rubik-Regular-400;
+    border: 1px solid $btn;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 180px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .icon__arrow-right {
+      fill: $btn;
+    }
+  }
+
+  .pagination {
+    justify-content: start;
+  }
+  &__aside{
+    width: 270px;
+  }
+}
+.filter{
+  &-search__form{
+    display: flex;
+    border: 1px solid #eef2f5;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    overflow: hidden;
+  }
+  &-search__input{
+    height: 45px;
+    width: 220px;
+    border: none;
+  }
+  &-search__btn{
+    padding: 15px;
+    background-color: #edf1f4;
+    width: 48px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+  }
+  .filters__title.filter-post__title{
+    &::after{
+      left: 148px;
+    }
+  }
+}
+.filter-post{
+  &__item{
+  display: flex;
+  margin-bottom: 25px;
+  }
+  &__box{
+    width: 179px;
+    height: 71px;
+  }
+  &__img{
+    width: 71px;
+    height: 71px;
+    object-fit: cover;
+  }
+  &__link{
+    margin-right: 20px;
+  }
+  &__name-link{
+    font-size: 14px;
+    line-height: 20px;
+    @extend %Rubik-Regular-400;
+    color: #333;
+  }
+  &__date{
+    @extend %Rubik-Regular-400;
+    font-size: 12px;
+    line-height: 30px;
+    color: #9a9a9a;
+    padding-left: 20px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url('../images/icons/calendar.svg');
+      left: 0;
+      top: 7px;
+      width: 11px;
+      height: 13px;
+      path{
+        fill: #9a9a9a;
+      }
+    }
+
+  }
+}
