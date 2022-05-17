@@ -1,0 +1,110 @@
+.contact {
+  padding-top: 120px;
+}
+
+.touch {
+  &__name {
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: $btn;
+    font-size: 16px;
+    line-height: 20px;
+    @extend %Poppins-Bold-700;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    color: #436372;
+    font-size: 35px;
+    line-height: 57px;
+    @extend %DMSans-Bold-700;
+    margin-bottom: 75px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 370px;
+    height: 380px;
+    text-align: center;
+    margin-bottom: 120px;
+    &:hover {
+      border: 1px solid $btn;
+
+      .touch__item-img {
+        background-color: $btn;
+
+        svg>path {
+          fill: white;
+        }
+      }
+    }
+  }
+  &__item-img {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+
+    svg>path {
+      fill: #a3bbc8;
+    }
+
+  }
+
+  &__item-name {
+    color: #222;
+    font-size: 20px;
+    line-height: 26px;
+    @extend %DMSans-Bold-700;
+    margin-bottom: 30px;
+  }
+
+  &__item-info {
+    color: #565872;
+    font-size: 16px;
+    line-height: 30px;
+    @extend %Rubik-Regular-400;
+  }
+}
+.touch__form{
+  max-width: 625px;
+  width: 100%;
+  margin-right: 35px;
+  &-inner{
+    display: flex;
+
+  }
+}
+.touch-item{
+  max-width: 300px;
+  width: 50%;
+  display: inline-block;
+
+}
+.touch__input{
+  &::placeholder{
+  text-transform: uppercase;
+  }
+}
+.touch__btn{
+  text-transform: uppercase;
+  padding: 20px 45px;
+  border-radius: 5px;
+  @extend %Poppins-SemiBold-600;
+  font-size: 15px;
+}
+.label__text{
+  width: 100%;
+}
+.form__item--name{
+  margin-right: 20px;
+}
