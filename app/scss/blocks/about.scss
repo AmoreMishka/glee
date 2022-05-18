@@ -1,0 +1,234 @@
+.about {
+  padding-top: 120px;
+
+  &__works {
+    display: flex;
+    margin-bottom: 115px;
+  }
+}
+
+.works {
+  &__img {
+    width: 570px;
+    height: 675px;
+    margin-right: 50px;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-top: 85px;
+  }
+
+  &__number {
+    font-size: 140px;
+    line-height: 32px;
+    color: $btn;
+    @extend %Rubik-Bold-700;
+    margin-right: 30px;
+  }
+
+  &__number-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 30px;
+    color: $title;
+    @extend %Rubik-Regular-400;
+  }
+
+  &__title {
+    color: $title;
+    font-size: 36px;
+    line-height: 32px;
+    @extend %DMSans-Bold-700;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $title;
+    @extend %Rubik-Regular-400;
+    padding-bottom: 65px;
+    border-bottom: 1px solid #e6eaf0;
+  }
+
+  &__projects {
+    display: flex;
+    padding-top: 40px;
+  }
+}
+
+.projects-items {
+  display: flex;
+
+  &:not(:last-child) {
+    padding-right: 25px;
+    border-right: 1px solid $btn;
+  }
+
+  &:not(:first-child) {
+    padding-left: 30px;
+  }
+}
+
+.projects-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  @extend %DMSans-Bold-700;
+
+  &__num {
+    font-size: 36px;
+    line-height: 38px;
+    color: $title;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: #4c4c4c;
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  height: 320px;
+  background-color: $bg;
+  margin-bottom: 115px;
+
+  &__items {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 32px;
+    color: $title;
+    @extend %DMSans-Bold-700;
+    margin-right: 120px;
+  }
+
+  &__item-num {
+    font-size: 36px;
+    margin: 25px 0;
+  }
+
+  &__item-text {
+    font-size: 18px;
+  }
+}
+
+.team {
+  &__inner {
+    display: flex;
+  }
+
+  &__info {
+    max-width: 300px;
+    width: 100%;
+    margin-right: 104px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 32px;
+    color: $title;
+    @extend %DMSans-Bold-700;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    @extend %Rubik-Regular-400;
+    color: $title;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    color: #fff;
+    font-size: 15px;
+    line-height: 55px;
+    @extend %Poppins-SemiBold-600;
+    padding: 20px 25px 20px 15px;
+    margin-right: 20px;
+    background-color: $btn;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+
+    svg {
+      width: 15px;
+      height: 12px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.staff {
+  display: grid;
+  width: 770px;
+  width: 100%;
+  grid-template-columns: 370px 370px;
+  grid-gap: 30px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__img {
+    object-fit: cover;
+    max-width: 370px;
+    height: 320px;
+    margin-bottom: 100px;
+  }
+
+  &__box {
+    display: flex;
+    background-color: #fff;
+    width: 325px;
+    height: 110px;
+    position: absolute;
+    left: -1px;
+    top: 280px;
+    z-index: 5;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  }
+
+  &__box-name {
+    font-size: 21px;
+    line-height: 26px;
+    color: #436372;
+    @extend %DMSans-Bold-700;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    padding-top: 30px;
+  }
+
+  &__position {
+    color: #565872;
+    @extend %Rubik-Regular-400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &__socials {
+    display: flex;
+    margin-left: 54px;
+    padding-top: 30px;
+    margin-right: 10px;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
