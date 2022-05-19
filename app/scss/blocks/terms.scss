@@ -1,0 +1,36 @@
+.terms {
+  padding-top: 120px;
+
+  &__title {
+    @extend %Rubik-Medium-500;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    color: $title;
+  }
+
+  &__text {
+    color: $title;
+    @extend %Rubik-Regular-400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 75px;
+  }
+
+  &__list {
+    list-style-type: decimal-leading-zero;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 45px;
+    color: $title;
+  }
+&__list-item{
+  margin-bottom: 30px;
+}
+}
+ol.terms__list{
+  padding-left: 30px;
+}
+li.terms__list-item{
+  padding-left: 10px;
+}
