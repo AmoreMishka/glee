@@ -4,6 +4,11 @@
   &__works {
     display: flex;
     margin-bottom: 115px;
+
+    @media(max-width:1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
@@ -13,6 +18,15 @@
     height: 675px;
     margin-right: 50px;
     object-fit: cover;
+
+    @media(max-width:900px) {
+      margin-right: 0;
+    }
+
+    @media(max-width:600px) {
+      width: 400px;
+      height: 500px;
+    }
   }
 
   &__info {
@@ -20,6 +34,10 @@
     align-items: center;
     margin-bottom: 50px;
     padding-top: 85px;
+
+    @media(max-width:1200px) {
+      justify-content: center;
+    }
   }
 
   &__number {
@@ -28,6 +46,10 @@
     color: $btn;
     @extend %Rubik-Bold-700;
     margin-right: 30px;
+
+    @media(max-width:600px) {
+      font-size: 85px;
+    }
   }
 
   &__number-text {
@@ -45,6 +67,14 @@
     line-height: 32px;
     @extend %DMSans-Bold-700;
     margin-bottom: 50px;
+
+    @media(max-width:1200px) {
+      text-align: center;
+    }
+
+    @media(max-width:600px) {
+      font-size: 22px;
+    }
   }
 
   &__text {
@@ -54,11 +84,30 @@
     @extend %Rubik-Regular-400;
     padding-bottom: 65px;
     border-bottom: 1px solid #e6eaf0;
+
+    @media(max-width:1200px) {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    @media(max-width:600px) {
+      font-size: 12px;
+      max-width: 460px;
+    }
   }
 
   &__projects {
     display: flex;
     padding-top: 40px;
+
+    @media(max-width:900px) {
+      justify-content: center;
+    }
+
+    @media(max-width:600px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
@@ -68,10 +117,25 @@
   &:not(:last-child) {
     padding-right: 25px;
     border-right: 1px solid $btn;
+
+    @media(max-width:600px) {
+      border: none;
+      margin-bottom: 20px;
+    }
   }
 
   &:not(:first-child) {
     padding-left: 30px;
+
+    @media(max-width:600px) {
+      padding-left: 0;
+    }
+  }
+}
+
+@media(max-width:600px) {
+  .projects-items:last-child {
+    padding-right: 30px;
   }
 }
 
@@ -86,6 +150,10 @@
     line-height: 38px;
     color: $title;
     margin-bottom: 10px;
+
+    @media(max-width:900px) {
+      font-size: 26px;
+    }
   }
 
   &__text {
@@ -102,9 +170,18 @@
   background-color: $bg;
   margin-bottom: 115px;
 
+  @media(max-width:360px) {
+    height: 360px;
+  }
+
   &__items {
     display: flex;
     align-items: baseline;
+
+    @media(max-width:360px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -115,27 +192,60 @@
     color: $title;
     @extend %DMSans-Bold-700;
     margin-right: 120px;
+
+    @media(max-width:1200px) {
+      margin-right: 20px;
+    }
+
+    @media(max-width:600px) {
+      line-height: 24px;
+    }
+
+    @media(max-width:360px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__item-num {
     font-size: 36px;
     margin: 25px 0;
+
+    @media(max-width:900px) {
+      font-size: 22px;
+    }
   }
 
   &__item-text {
     font-size: 18px;
+
+    @media(max-width:900px) {
+      font-size: 12px;
+    }
   }
 }
 
 .team {
   &__inner {
     display: flex;
+
+    @media(max-width:1350px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media(max-width:900px){
+      margin-left: 60px;
+    }
   }
 
   &__info {
     max-width: 300px;
     width: 100%;
     margin-right: 104px;
+    @media(max-width:1350px) {
+      margin-right: 0;
+      margin-bottom: 40px;
+      max-width: 700px;
+    }
   }
 
   &__title {
@@ -152,6 +262,9 @@
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 40px;
+    @media(max-width: 600px){
+      font-size: 12px;
+    }
   }
 
   &__btn {
@@ -180,7 +293,18 @@
   width: 100%;
   grid-template-columns: 370px 370px;
   grid-gap: 30px;
-
+  @media(max-width:1350px) {
+    justify-content: center;
+  }
+  @media(max-width:900px){
+    grid-template-columns: 270px 270px;
+  }
+  @media(max-width:600px){
+    grid-template-columns: 320px;
+  }
+  @media(max-width:360px){
+    margin-left: 25px;
+  }
   &__item {
     position: relative;
   }
@@ -190,6 +314,11 @@
     max-width: 370px;
     height: 320px;
     margin-bottom: 100px;
+
+    @media(max-width:900px){
+      max-width: 250px;
+      height: 200px;
+    }
   }
 
   &__box {
@@ -202,6 +331,11 @@
     top: 280px;
     z-index: 5;
     box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    @media(max-width:900px){
+      top: 160px;
+      flex-direction: column;
+    align-items: flex-start;
+    }
   }
 
   &__box-name {
@@ -212,6 +346,10 @@
     margin-bottom: 20px;
     margin-left: 25px;
     padding-top: 30px;
+    @media(max-width:900px){
+      margin-left: 0;
+      margin-bottom: 0;
+    }
   }
 
   &__position {

@@ -28,3 +28,14 @@
   }
 
 }
+@media(max-width: 900px){
+.info{
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item{
+    &:not(:last-child){
+      border-right: none;
+    }
+  }
+}
+}

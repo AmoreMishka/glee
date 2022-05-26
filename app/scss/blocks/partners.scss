@@ -2,11 +2,23 @@
   padding-top: 95px;
   background-color: #fef7f0;
   height: 265px;
+  @media(max-width:600px){
+    padding-top: 20px;
+    height: 440px;
+  }
   &__list{
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 50px;
     padding-right: 85px;
+    @media(max-width:600px){
+      flex-direction: column;
+    }
+  }
+}
+@media(max-width:600px){
+  .partners__list-item{
+    padding-bottom: 20px;
   }
 }

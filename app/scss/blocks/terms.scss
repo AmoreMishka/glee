@@ -1,6 +1,10 @@
 .terms {
   padding-top: 120px;
 
+  @media(max-width:1200px) {
+    padding-left: 15px;
+  }
+
   &__title {
     @extend %Rubik-Medium-500;
     font-size: 24px;
@@ -24,13 +28,16 @@
     margin-bottom: 45px;
     color: $title;
   }
-&__list-item{
-  margin-bottom: 30px;
+
+  &__list-item {
+    margin-bottom: 30px;
+  }
 }
-}
-ol.terms__list{
+
+ol.terms__list {
   padding-left: 30px;
 }
-li.terms__list-item{
+
+li.terms__list-item {
   padding-left: 10px;
 }

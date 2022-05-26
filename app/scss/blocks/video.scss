@@ -6,5 +6,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media(max-width:1200px){
+      height: 400px;
+    }
+    @media(max-width:1000px){
+      height: 300px;
+    }
+    @media(max-width:900px){
+      height: 250px;
+    }
+    @media(max-width:600px){
+      height: 150px;
+    }
+    @media(max-width:360px){
+      height: 100px;
+    }
+  }
+}
+@media(max-width:360px){
+  .video__link{
+    img{
+      width: 75px;
+      height: 75px;
+    }
   }
 }

@@ -50,3 +50,32 @@
 
 
 
+@media (max-width: 1000px){
+  .user-nav{
+    margin-left: auto;
+  }
+}
+@media (max-width: 600px){
+  .user-nav{
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 35px;
+    &__btn{
+      &:last-child{
+      margin-right: 0;
+      }
+    }
+  }
+}
+@media (max-width: 360px){
+  .user-nav{
+    &__links{
+      margin-right: 5px;
+    }
+    &__btn{
+      &:first-child{
+        margin-right: 5px;
+      }
+    }
+  }
+}

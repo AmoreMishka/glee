@@ -102,3 +102,43 @@
     }
   }
 }
+
+@media(max-width: 1200px) {
+  .footer-top {
+    padding: 70px 15px;
+    flex-wrap: wrap;
+
+    &__subscribe {
+      width: 100%;
+      margin-top: 32px;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+}
+@media(max-width: 900px){
+  .footer-top{
+    &__contact{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media(max-width: 600px){
+.footer-bottom{
+  flex-wrap: wrap;
+  &__copy{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.footer-top{
+  &__nav{
+    width:100%;
+    margin-bottom: 30px;
+  }
+}
+}
